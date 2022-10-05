@@ -39,7 +39,7 @@
 .list-items li a{
     text-decoration: none;
     color: white;
-    margin-left: 252px;
+    /* margin-left: 252px; */
     font-size: medium;
     font-size: 1.3rem;
     margin: 15px;
