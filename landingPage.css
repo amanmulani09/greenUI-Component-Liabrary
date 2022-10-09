@@ -122,6 +122,14 @@ width: 45%;
     margin-top: 33px;
     cursor: pointer;
 }
+.intro button a{
+text-decoration: none;
+color:green;
+}
+
+.intro button a:hover{
+    color:white;
+}
 
 .intro button:hover{
     background-color: green;
