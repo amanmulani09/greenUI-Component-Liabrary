@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root{
+    --primary-color:#FFAD00;
+    --primary-light-color:#fdc447;
+    --secondary-color:#2f2e41;
+    --white-page-background-color:#ffffffeb;
+    --text-black-color:#333333;
+    --text-white-color:#ffffffeb;
+    --text-grey-color:#605d5d;
+    --grey-border-color:#9790908a;
+    --black-box-shadow:#00000030;
+    --component-primary-color:#9edff5;
+    --component-secondary-color:#E2E3E3;
+    --component-warning-color:#ffff99;
+    --component-success-color:#84f1c9;
+    --component-error-color:#ffb3b3;
+    --component-primary-dark:#007bff;
+    --component-secondary-dark:#6c757d;
+    --component-warning-dark:#ffc107;
+    --component-success-dark:#28a745;
+    --component-error-dark:#dc3545;
+    --persian-blue:#1b2470;
+    --card-border-color:#ececec;
+    --code-snippet-black:#151718;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--white-page-background-color);
+}
+
+a{
+    text-decoration: none;
+}
