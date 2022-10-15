@@ -1,0 +1,54 @@
+@import "./base.css";
+@import "../global.css";
+
+.sidebar-main-container {
+  display: flex;
+}
+
+/* sidebar */
+.sidebar-container {
+  display: flex;
+  width: 200px;
+  overflow-y: auto;
+  height: 40rem;
+  margin-right: 2rem;
+  position: sticky;
+  top:0rem;
+}
+.component-list-container {
+  margin-bottom: 1rem;
+}
+
+.component-list-item {
+  padding: 1rem 2rem;
+  list-style-type: none;
+}
+
+.component-list-item:hover {
+  background-color: var(--primary-light-color);
+}
+
+/* components-main section */
+
+.component-container {
+  margin: 3rem 5rem;
+  padding: 2rem;
+  border: 1px solid var(--grey-border-color);
+  border-radius: 0.25rem;
+  width: 57rem;
+
+}
+
+/* Installation */
+
+.main-intro{
+    margin-left: 4.8rem;
+}
+
+/* iframe */
+
+.code-snippet iframe{
+  width:100%;
+  height: auto;
+  border:1px solid transparent;
+}

@@ -1,0 +1,14 @@
+@import "./base.css";
+@import "./global.css";
+
+
+
+.round-img{
+    border-radius: 50%;
+}
+
+.responsive-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

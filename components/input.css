@@ -1,0 +1,39 @@
+@import "../base.css";
+@import "../global.css";
+.input-container {
+  background-color: var(--component-secondary-color);
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+}
+.input {
+  padding: 5px 10px;
+  margin: 8px 1rem;
+  border-radius: 4px;
+  width: 15rem;
+  font-size: 0.9rem;
+}
+.input-label {
+  font-size: 0.9rem;
+}
+
+.input-error {
+  border: 2px solid var(--component-error-dark);
+}
+
+.input-success {
+  border: 2px solid var(--component-success-dark);
+}
+.text-red {
+  color: var(--component-error-dark);
+  font-weight: 600;
+}
+.password-margin {
+  margin-left: 8rem;
+}
+
+.form-check-input {
+  width: 1rem;
+  height: 1rem;
+  margin: 5px;
+  border: 1px solid var(--grey-border-color);
+}

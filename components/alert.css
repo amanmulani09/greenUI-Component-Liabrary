@@ -1,0 +1,35 @@
+@import "../base.css";
+@import "../global.css";
+
+.alert-component-container {
+  margin: 2rem 0rem;
+  justify-items: center;
+}
+.alert {
+  border-radius: 5px;
+  padding: 1rem;
+  color: var(--text-black-color);
+  margin: 1rem;
+  display: flex;
+}
+
+.alert-icon {
+  margin-right: 0.75rem;
+}
+.alert-primary {
+  background-color: var(--component-primary-color);
+}
+.alert-secondary {
+  background-color: var(--component-secondary-color);
+}
+.alert-success {
+  background-color: var(--component-success-color);
+}
+
+.alert-warning {
+  background-color: var(--component-warning-color);
+}
+
+.alert-error {
+  background-color: var(--component-error-color);
+}

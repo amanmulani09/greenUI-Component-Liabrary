@@ -1,0 +1,41 @@
+@import "../base.css";
+@import "../global.css";
+
+.avatar-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var( --component-secondary-color);
+  border-radius: 8px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.avatar-lg {
+  height: 10rem;
+  width: 10rem;
+}
+
+.avatar-md {
+  height: 7rem;
+  width: 7rem;
+}
+
+.avatar-sm {
+  height: 5rem;
+  width: 5rem;
+}
+
+.avatar-xs {
+  height: 3rem;
+  width: 3rem;
+}
+
+.avatar-square {
+  border-radius: 5px;
+  border: 1px solid transparent;
+}

@@ -1,0 +1,174 @@
+@import "../base.css";
+@import "../global.css";
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 1rem;
+  margin: 1rem 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-success:hover,
+.btn-danger:hover,
+.btn-warning:hover {
+  border: 2px solid var(--grey-border-color);
+  box-shadow: 5px 5px var(--grey-border-color);
+}
+
+/* Default buttons */
+.btn-primary {
+  background-color: var(--component-primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--component-secondary-color);
+}
+.btn-success {
+  background-color: var(--component-success-color);
+}
+.btn-danger {
+  background-color: var(--component-error-color);
+}
+
+.btn-warning {
+  background-color: var(--component-warning-color);
+}
+/* Outline buttons */
+.btn-outline-primary {
+  color: var(--component-primary-dark);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--component-primary-dark);
+}
+
+.btn-outline-primary:hover {
+  color: var(--text-white-color);
+  background-color: var(--component-primary-dark);
+  background-image: none;
+  border-color: var(--component-primary-dark);
+}
+.btn-outline-secondary {
+  color: var(--component-secondary-dark);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--component-secondary-dark);
+}
+
+.btn-outline-secondary:hover {
+  color: var(--text-white-color);
+  background-color: var(--component-secondary-dark);
+  background-image: none;
+  border-color: var(--component-secondary-dark);
+}
+.btn-outline-success {
+  color: var(--component-success-dark);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--component-success-dark);
+}
+
+.btn-outline-success:hover {
+  color: var(--text-white-color);
+  background-color: var(--component-success-dark);
+  background-image: none;
+  border-color: var(--component-success-dark);
+}
+.btn-outline-danger {
+  color: var(--component-error-dark);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--component-error-dark);
+}
+.btn-outline-danger:hover {
+  color: var(--text-white-color);
+  background-color: var(--component-error-dark);
+  background-image: none;
+  border-color: var(--component-error-dark);
+}
+
+.btn-outline-warning {
+  color: var(--component-warning-dark);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--component-warning-dark);
+}
+
+.btn-outline-warning:hover {
+  color: var(--text-white-color);
+  background-color: var(--component-warning-dark);
+  background-image: none;
+  border-color: var(--component-warning-dark);
+}
+
+/* diable */
+.btn-disable {
+  color: var(--text-black-color);
+  background-color: var(--component-secondary-color);
+}
+.button-container {
+  margin: 2rem 0rem;
+  justify-items: center;
+}
+
+/* Link button */
+.btn-link {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: initial;
+}
+
+.btn-link-primary {
+  text-decoration-color: var(--primary-color);
+}
+
+.btn-link-secondary {
+  text-decoration-color: var(--persian-blue);
+}
+
+.btn-link-primary:hover {
+  color: var(--primary-color);
+}
+
+.btn-link-secondary:hover {
+  color: var(--persian-blue);
+}
+
+/* Action Floating button */
+.btn-round {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.btn-float {
+  box-shadow: 0 6px 1.25rem 0 var(--black-box-shadow);
+  background-color: var(--persian-blue);
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  color: var(--white-page-background-color);
+}
+
+.btn-float :hover {
+  cursor: pointer;
+}
+
+.btn-float:focus {
+  box-shadow: 0 6px 2rem 0 var(--component-primary-color);
+}
+
+/* Icon button */
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  color: var(--white-page-background-color);
+}
+
+.black-bg {
+  background-color: var(--code-snippet-black);
+}

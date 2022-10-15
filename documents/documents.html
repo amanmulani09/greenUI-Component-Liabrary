@@ -1,48 +1,1156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green UI | DOCS</title>
-
-    <!-- major StyleSheet's -->
-    <link rel="stylesheet" href="../greenuiV1.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../base.css">
-    <link rel="stylesheet" href="../global.css">
-    <link rel="stylesheet" href="../landingPage.css">
-
-    <!-- component Styles --
-    <link rel="stylesheet" href="../components/alert.css">
-    <link rel="stylesheet" href="../components/avatar.css">
-    <link rel="stylesheet" href="../components/badge.css">
-    <link rel="stylesheet" href="../components/button.css">
-    <link rel="stylesheet" href="../components/card.css">
-    <link rel="stylesheet" href="../components/image.css">
-    <link rel="stylesheet" href="../components/input.css">
-    <link rel="stylesheet" href="../components/navigation.css">
-    <link rel="stylesheet" href="../components/snackbar.css">
-    <link rel="stylesheet" href="../components/typography.css">
-
-</head>
-<body>
-    <nav class="navbar">
-
-        <div class="heading">
-            <h2 class="logo">Green UI</h2>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>greenUI|docs</title>
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../landing.css" />
+    <link rel="stylesheet" href="./documents.css" />
+    <link rel="stylesheet" href="../components/alert.css" />
+    <link rel="stylesheet" href="../components/button.css" />
+    <link rel="stylesheet" href="../components/input.css" />
+    <link rel="stylesheet" href="../components/badge.css" />
+    <link rel="stylesheet" href="../components/image.css" />
+    <link rel="stylesheet" href="../components/card.css" />
+    <link rel="stylesheet" href="../components/navigation.css" />
+    <link rel="stylesheet" href="../components/typography.css" />
+    <link rel="stylesheet" href="../components/snackbar.css" />
+    <link rel="stylesheet" href="../greenUI-v1.css"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../components/avatar.css" />
+  </head>
+  <body>
+    <nav class="nav-header">
+      <div class="flex-display">
+        <div class="brand-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0 0 172 172"
+            style="fill: #000000"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#ffad00">
+                <path
+                  d="M26.06315,7.55859c-10.23185,-0.65365 -18.0525,10.08645 -14.29134,19.62435v0.014l2.33757,5.86491c4.63843,11.60849 5.80894,24.31666 3.35938,36.5752l-0.65788,3.26139v0.014c-2.0216,10.1188 3.51972,20.344 13.10156,24.1735l12.10775,4.8431l-8.98633,5.99089c-1.55804,1.04547 -2.90179,2.38923 -3.94727,3.94726l-3.7793,5.66895c-7.55293,11.33288 -6.04655,26.52478 3.58333,36.15527l2.1556,2.1556c6.19739,6.19153 15.60102,8.00795 23.6556,4.56315l26.16113,-11.18391c0.3771,2.27191 1.71023,4.2731 3.66151,5.49633c1.95128,1.22323 4.3334,1.55109 6.54259,0.90048c4.87185,-1.50499 9.4064,-3.93863 13.35351,-7.16667c3.5832,-2.9131 6.76493,-6.28781 9.46224,-10.03614c2.79984,-3.78576 5.00425,-7.97745 6.53678,-12.42969c0.82302,-2.46152 1.42725,-4.99086 1.80567,-7.55859c0.13617,-1.548 0.29394,-2.82132 0.29394,-4.57715l-0.08399,-2.1416c0.42294,0.049 0.84805,0.07702 1.27377,0.08398c5.9069,-0.02011 11.04549,-4.04967 12.47346,-9.78141c1.42798,-5.73174 -1.21953,-11.70108 -6.42659,-14.49007l0.08399,-0.67187c0.35117,-2.408 0.96873,-4.67535 1.44173,-7.05469c1.02254,-4.26024 2.91442,-8.26322 5.55697,-11.75782c2.17454,-2.84458 5.84579,-4.10329 9.30827,-3.19141c3.58835,0.86264 6.54216,3.39969 7.93652,6.81673l0.09798,0.58789c0.39981,1.73573 2.01384,2.9143 3.78889,2.76667c1.77505,-0.14763 3.17221,-1.57663 3.2798,-3.35456c-0.14476,-3.64176 -1.64784,-7.09734 -4.21322,-9.6862c-2.19281,-2.49056 -4.9536,-4.41592 -8.0485,-5.61296c-3.3219,-1.29745 -6.9477,-1.60851 -10.44206,-0.89583c-1.72898,0.4496 -3.40792,1.07334 -5.01107,1.86165c-1.45939,0.91209 -2.86174,1.91244 -4.19922,2.99544c-4.41681,4.35374 -7.81544,9.63095 -9.95215,15.45313c-0.89583,2.70183 -1.97083,5.43715 -2.6875,8.16048l-1.18977,5.01106c-0.66081,0.5451 -1.26569,1.15466 -1.80567,1.81967c-2.02769,-22.82749 -7.47024,-40.80318 -18.2666,-54.39388c-14.3182,-18.0241 -37.29763,-26.68852 -69.35709,-28.82064zM25.13932,21.86393c30.00109,1.99752 47.95656,9.44302 59.06901,23.43164c10.69054,13.4575 15.68581,34.63617 16.05501,65.73177c-0.63406,0.51112 -1.25482,1.03853 -1.86165,1.5817c-2.95872,2.7904 -5.60147,5.89785 -7.88054,9.26627c-2.17158,3.18301 -4.06808,6.5452 -5.66894,10.05013l-35.79134,15.29916c-2.71127,1.15956 -5.79441,0.57243 -7.88053,-1.51172l-2.1556,-2.1556c-4.86145,-4.86175 -5.60461,-12.36346 -1.79167,-18.08464l3.7513,-5.62695l0.014,-0.014l0.014,-0.014l31.63412,-21.08008l-37.41504,-14.96322c-3.24672,-1.29694 -5.04553,-4.62008 -4.36719,-8.0485v-0.014l0.65788,-3.26139v-0.014c2.99366,-14.98069 1.56747,-30.50675 -4.10124,-44.69369l-2.32357,-5.82292c-0.11526,-0.29229 -0.27156,-0.07602 0.04199,-0.05599z"
+                ></path>
+              </g>
+            </g>
+          </svg>
         </div>
-        
-        <div class="links">
-            <ul class='list-items'>
-                <li>
-                    <a href="/">Home</a>
-                    <a href="./documents.html">Docs </a>
-                    <a href="https://github.com/amanmulani09/greenUI-Component-Liabrary" target="_blank">Contribute </a>
-                </li>
-            </ul>
-        </div>
+        <span class="orange-theme-color brand-name">greenUI</span>
+      </div>
+      <div class="nav-bar-tabs mr-3 align-items-center">
+        <a class="nav-text nav-tab-text" href="../index.html">Home</a>
+        <a class="nav-text nav-tab-text" href="#">Documentation</a>
+        <a href="https://github.com/dikshadhote/greenUI/tree/dev"
+          ><i class="fab fa-github nav-text nav-tab-text" title="GitHub"></i
+        ></a>
+      </div>
     </nav>
-</body>
+    <div class="sidebar-main-container">
+      <div class="sidebar-container">
+        <div class="component-list-container m-1">
+          <ul class="component-list">
+            <li class="component-list-item">
+              <a class="fs-2 font-weight-bold">Get Started</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#installation"
+                >Installation</a
+              >
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#typography">Typography</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 font-weight-bold black-text-color">Components</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#alert">Alerts</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#avatar">Avatar</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#badge">Badge</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#button">Buttons</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#card">Card</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#image">Image</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#input">Input</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#navigation">Navigation</a>
+            </li>
+            <li class="component-list-item">
+              <a class="fs-2 black-text-color" href="#Snackbar">Snackbar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="component-main-section">
+        <section id="installation" class="component-container">
+          <h2>Installation Guide</h2>
+          <p class="mt-1 mb-1">
+            To use greenUI in your project,copy the link given below and paste
+            it in the "head" tag of your html,above all other style sheets.
+          </p>
+          <div class="mt-2 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252FgreenUI-demo.netlify.app%252FgreenUI-v1.css%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="typography" class="component-container">
+          <h2>Typography</h2>
+          <p class="mt-1 fs-2 grey-text">
+            greenUI provides text-utlity classes which you can directly use in
+            your project
+          </p>
+          <p class="fs-2 mt-2">Headings:</p>
+          <p class="pt-1">
+            All HTML headings from
+            <span class="orange-theme-color">h1 to h6</span> are available
+          </p>
+          <div class="typography-container">
+            <h1>h1 heading greenUI</h1>
+            <h2>h2 heading greenUI</h2>
+            <h3>h3 heading greenUI</h3>
+            <h4>h4 heading greenUI</h4>
+            <h5>h5 heading greenUI</h5>
+            <h6>h6 heading greenUI</h6>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253Eh1%2520heading%2520greenUI%253C%252Fh1%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253Eh2%2520heading%2520greenUI%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253Eh3%2520heading%2520greenUI%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253Eh4%2520heading%2520greenUI%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Eh5%2520heading%2520greenUI%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%253Eh6%2520heading%2520greenUI%253C%252Fh6%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-3">Give heading style to paragraph:</p>
+          <p class="pt-1">
+            If you want to match styling of h1 to h6 but can not use heading
+            tags.Use
+            <span class="orange-theme-color"> h1, h2 etc</span> in class to
+            style it respective way
+          </p>
+          <div class="typography-container">
+            <p class="h1">h1 heading greenUI</p>
+            <p class="h2">h2 heading greenUI</p>
+            <p class="h3">h3 heading greenUI</p>
+            <p class="h4">h4 heading greenUI</p>
+            <p class="h5">h5 heading greenUI</p>
+            <p class="h6">h6 heading greenUI</p>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h1%2522%253Eh1%2520heading%2520greenUI%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h2%2522%253Eh2%2520heading%2520greenUI%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h3%2522%253Eh3%2520heading%2520greenUI%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h4%2522%253Eh4%2520heading%2520greenUI%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h5%2522%253Eh5%2520heading%2520greenUI%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253Eh6%2520heading%2520greenUI%253C%252Fp%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-3">Font weight</p>
+          <p class="pt-1">
+            Use
+            <span class="orange-theme-color">
+              font-weight-bolder,font-weight-bold etc</span
+            >
+            in class to make font bold
+          </p>
+          <div class="typography-container">
+            <p class="font-weight-bolder p-1">Font weight bolder</p>
+            <p class="font-weight-bold p-1">Font weight bold</p>
+            <p class="font-weight-regular p-1">Font weight regular</p>
+            <p class="font-weight-light p-1">Font weight light</p>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-weight-bolder%2520p-1%2522%253EFont%2520weight%2520bolder%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-weight-bold%2520p-1%2520%2522%253EFont%2520weight%2520bold%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-weight-regular%2520p-1%2522%253EFont%2520weight%2520regular%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-weight-light%2520p-1%2522%253EFont%2520weight%2520light%253C%252Fp%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="alert" class="component-container">
+          <h2>Alerts</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Alerts are used to attract user's attention.They provide contextual
+            feedback messages without interrupting the normal flow of user.
+          </p>
+          <p class="fs-2 mt-2">Examples:</p>
+          <p class="pt-1">
+            To use alert in your code,use class name
+            <span class="orange-theme-color">alert</span>.
+          </p>
+          <p class="pt-1">
+            To display specific category error message use class name such as
+            <span class="orange-theme-color"
+              >alert-primary, alert-success, alert-error etc.</span
+            >
+          </p>
+          <div class="alert-component-container">
+            <div class="alert alert-primary">
+              <i class="fas fa-exclamation-circle alert-icon"></i>
+              <span>This is primary alert</span>
+            </div>
+            <div class="alert alert-secondary">
+              <i class="fas fa-exclamation-circle alert-icon"></i>
+              <span>This is secondary alert</span>
+            </div>
+            <div class="alert alert-success">
+              <i class="fas fa-check-circle alert-icon"></i>
+              <span>This is success alert</span>
+            </div>
+            <div class="alert alert-warning">
+              <i class="fas fa-exclamation-triangle alert-icon"></i>
+              <span>This is warning alert</span>
+            </div>
+            <div class="alert alert-error">
+              <i class="fas fa-minus-circle alert-icon"></i>
+              <span>This is error alert</span>
+            </div>
+          </div>
+          <div class="m-2 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EThis%2520is%2520primary%2520alert%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EThis%2520is%2520secondary%2520alert%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EThis%2520is%2520success%2520alert%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EThis%2520is%2520warning%2520alert%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EThis%2520is%2520error%2520alert%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="avatar" class="component-container">
+          <h2>Avatars</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Avatars are display pictures, which are used in social media
+            paltform.
+          </p>
+          <p class="fs-2 mt-4 font-weight-bold">Round Avatars</p>
+          <p class="pt-1 ml-1">
+            Use class<span class="orange-theme-color"> avatar </span>to get
+            round Image and
+            <span class="orange-theme-color">
+              avatar-sm, avatar avatar-lg etc </span
+            >for sizes of avatar respectively.
+          </p>
+          <div class="avatar-container">
+            <img src="../assets/avatar3.png" class="avatar avatar-xs" />
+            <img src="../assets/anime_cute_150.png" class="avatar avatar-sm" />
+            <img src="../assets/avatar6.png" class="avatar avatar-md" />
+            <img src="../assets/avatar2.png" class="avatar avatar-lg" />
+          </div>
+          <div class="m-2 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Favatar3.png%2522%2520class%253D%2522avatar%2520avatar-xs%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Fanime_cute_150.png%2522%2520class%253D%2522avatar%2520avatar-sm%2522%252F%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Favatar6.png%2522%2520class%253D%2522avatar%2520avatar-md%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Favatar2.png%2522class%253D%2522avatar%2520avatar-lg%2522%252F%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-4 font-weight-bold">Square Avatars</p>
+          <p class="pt-1 ml-1">
+            Use class<span class="orange-theme-color"> avatar </span>to get
+            round Image and
+            <span class="orange-theme-color">
+              avatar-sm, avatar avatar-lg etc </span
+            >for sizes of avatar respectively.
+          </p>
+          <div class="avatar-container">
+            <img src="../assets/avatar2.png" class="avatar-square avatar-lg" />
+            <img src="../assets/avatar6.png" class="avatar-square avatar-md" />
+            <img
+              src="../assets/anime_cute_150.png"
+              class="avatar-square avatar-sm"
+            />
+            <img src="../assets/avatar3.png" class="avatar-square avatar-xs" />
+          </div>
+          <div class="m-2 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Favatar2.png%2522class%253D%2522avatar-square%2520avatar-lg%2522%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Favatar6.png%2522%2520class%253D%2522avatar-square%2520avatar-md%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Fanime_cute_150.png%2522%2520class%253D%2522avatar-square%2520avatar-sm%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Favatar3.png%2522%2520class%253D%2522avatar-square%2520avatar-xs%2522%252F%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <section id="badge" class="component-container">
+          <h2>Badge</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Badges are used to display number of notifications you got from an
+            app or for giving status information such as online,offline etc.
+          </p>
+          <p class="fs-2 mt-2 font-weight-bold">Text with badge</p>
+          <p class="pt-1 ml-1">
+            Use class <span class="orange-theme-color">badge </span>to get
+            notification over text, and
+            <span class="orange-theme-color">small-badge,large-badge</span> for
+            size of the badge
+          </p>
+          <div class="badge-container mt-2 ml-2">
+            <div class="badge-parent p-1">
+              <p>
+                Text with a small badge
+                <span
+                  class="badge small-badge position-small-text persian-blue-bg white-text-color"
+                >
+                  <small>4</small>
+                </span>
+              </p>
+            </div>
+
+            <div class="badge-parent p-1">
+              <p>
+                Text with a Large badge
+                <span
+                  class="badge large-badge position-large-text persian-blue-bg white-text-color"
+                >
+                  <small>99+</small>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="m-2 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EText%2520with%2520a%2520small%2520badge%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520small-badge%2520position-small-text%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520persian-blue-bg%2520white-text-color%2522%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253E4%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EText%2520with%2520a%2520Large%2520badge%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520large-badge%2520position-large-text%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520persian-blue-bg%2520white-text-color%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253E99%252B%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <p class="fs-2 mt-3 font-weight-bold">Icon with badge</p>
+          <p class="pt-1 ml-1">
+            Use class <span class="orange-theme-color">badge </span>to get
+            notification over icon, and
+            <span class="orange-theme-color">small-badge,large-badge</span> for
+            size of the badge
+          </p>
+          <div class="badge-container d-flex flex-justify-around m-1">
+            <div class="icon-container">
+              <span class="material-icons icon-size">mail</span>
+              <span class="badge green-bg-dark position-mail-badge small-badge">
+                <small class="number">4</small>
+              </span>
+            </div>
+            <div class="icon-container">
+              <span class="material-icons icon-size"> shopping_cart</span>
+              <span class="badge green-bg-dark position-cart-badge small-badge">
+                <small class="number">2</small>
+              </span>
+            </div>
+          </div>
+          <div class="m-2 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520icon-size%2522%253Email%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520green-bg-dark%2520position-mail-badge%2520small-badge%2522%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522number%2522%253E4%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520icon-size%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520green-bg-dark%2520position-cart-badge%2520small-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522number%2522%253E2%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-2 font-weight-bold">Avatar with badge</p>
+          <p class="pt-1 ml-1">
+            Use class
+            <span class="orange-theme-color"
+              >green-bg-dark, grey-bg, red-bg </span
+            >to show status as online,offline,do not disturb respectively.
+          </p>
+          <div class="badge-container d-flex flex-justify-around m-1">
+            <div class="badge-parent">
+              <img
+                src="../assets/anime_cute_150.png"
+                class="avatar avatar-md"
+              />
+              <span
+                class="badge small-badge avt-bdg-position green-bg-dark"
+              ></span>
+            </div>
+            <div class="badge-parent">
+              <img
+                src="../assets/anime_cute_150.png"
+                class="avatar avatar-md"
+              />
+              <span class="badge small-badge avt-bdg-position red-bg"></span>
+            </div>
+            <div class="badge-parent">
+              <img
+                src="../assets/anime_cute_150.png"
+                class="avatar avatar-md"
+              />
+              <span class="badge small-badge avt-bdg-position grey-bg"></span>
+            </div>
+          </div>
+          <div class="m-2 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Fanime_cute_150.png%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520small-badge%2520avt-bdg-position%2520%2520green-bg-dark%2522%253E%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Fanime_cute_150.png%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520small-badge%2520avt-bdg-position%2520red-bg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Fanime_cute_150.png%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520small-badge%2520avt-bdg-position%2520grey-bg%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="button" class="component-container">
+          <h2>Buttons</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Buttons are clickable elements by which user interacts with web
+            interface and perform some action.
+          </p>
+          <div class="button-container">
+            <p class="fs-2 mt-2 font-weight-bold">Default button:</p>
+            <p class="pt-1 ml-1">
+              To display specific category of button use class name such as
+              <span class="orange-theme-color"
+                >btn-secondary, btn-success, btn-warning etc.</span
+              >
+            </p>
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <div class="mt-2 ml-1 code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%2520%2520%2520%2520%250A"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="button-container">
+            <p class="fs-2 mt-2 font-weight-bold">Outline button:</p>
+            <p class="pt-1 ml-1">
+              You believe in simplicity and hence want something which is not
+              loud as background colors on button?
+            </p>
+            <p class="pt-1 ml-1">
+              use <span class="orange-theme-color">btn-outline-*</span> and
+              implement the simplicity you believe in.
+            </p>
+            <button class="btn btn-outline-primary">Primary</button>
+            <button class="btn btn-outline-secondary">Secondary</button>
+            <button class="btn btn-outline-success">Success</button>
+            <button class="btn btn-outline-danger">Danger</button>
+            <button class="btn btn-outline-warning">Warning</button>
+            <div class="mt-2 ml-1 code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-warning%2522%253EWarning%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <div class="button-container">
+              <p class="fs-2 mt-2 font-weight-bold">Disabled button:</p>
+              <p class="pt-1 ml-1">
+                We can make buttons look inactive by adding the disabled boolean
+                attribute to any element.
+              </p>
+              <button type="button" class="btn btn-disable" disabled>
+                Primary
+              </button>
+              <div class="mt-2 ml-1 code-snippet">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-disable%2522%2520disabled%253EPrimary%253C%252Fbutton%253E%2520%2520%2520%2520"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </div>
+            </div>
+            <div class="button-container">
+              <p class="fs-2 mt-2 font-weight-bold">Link button:</p>
+              <p class="pt-1 ml-1">
+                This button acts as a clickable link.
+              </p>
+              <p class="pt-1 ml-1">
+                use <span class="orange-theme-color">btn-link ,btn-link-*</span> to show clickable text functionality.
+              </p>
+              <a href="#button" class="btn btn-link btn-link-primary" role="button">Primary</a>
+              <a  href="#button" class="btn btn-link btn-link-secondary" role="button">Secondary</a>
+              
+              <div class="mt-2 ml-1 code-snippet">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523button%2522%2520class%253D%2522btn%2520btn-link%2520btn-link-primary%2522%2520role%253D%2522button%2522%253EPrimary%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523button%2522%2520class%253D%2522btn%2520btn-link%2520btn-link-secondary%2522%2520role%253D%2522button%2522%253ESecondary%253C%252Fa%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520"
+                  sandbox="allow-scripts allow-same-origin">
+              </iframe>
+              </div>
+              <div class="button-container">
+                <p class="fs-2 mt-2 font-weight-bold">Floating Action button:</p>
+                <p class="pt-1 ml-1">
+                  A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content.
+                </p>
+                <p class="pt-1 ml-1">
+                  use <span class="orange-theme-color">btn-float</span> for  floating button.
+                </p>
+               
+                <button class="btn-round btn-float" title="Add"><i class="fas fa-plus"></i></button>
+                <button class="btn-round btn-float" title="Delete">
+                  <i class="fas fa-trash"></i>
+                </button>
+                <div class="mt-2 ml-1 code-snippet">
+                  <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-round%2520btn-float%2522%2520title%253D%2522Add%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-round%2520btn-float%2522%2520title%253D%2522Delete%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                </div>
+          </div>
+          <div class="button-container">
+            <p class="fs-2 mt-2 font-weight-bold">Icon button:</p>
+            <p class="pt-1 ml-1">
+              Icon buttons mostly used in social media pages
+            </p>
+            <p class="pt-1 ml-1">
+              use <span class="orange-theme-color">icon-btn</span> class to replicate icon button as follows.
+            </p>
+            <div class="d-flex">
+            <button
+            href="#"
+            class="btn persian-blue-bg icon-btn"
+            title="Add to cart"
+          >
+            <span class="material-icons card-btn-icon">
+              shopping_cart</span
+            >
+            <p>Add to cart</p>
+          </button>
+          <button
+          href="#"
+          class="btn black-bg icon-btn"
+          title="Sign in with github"
+        >
+        <i class="fab fa-github pr-1" aria-hidden="true"></i>
+          <p>Sign in with github</p>
+        </button>
+      </div>
+            <div class="mt-2 ml-1 code-snippet">
+              <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520persian-blue-bg%2520icon-btn%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520title%253D%2522Add%2520to%2520cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-btn-icon%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAdd%2520to%2520cart%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520black-bg%2520icon-btn%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520title%253D%2522Sign%2520in%2520with%2520github%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-github%2520pr-1%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESign%2520in%2520with%2520github%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            </div>
+      </div>
+        </section>
+        <section id="card" class="component-container">
+          <h2>Cards</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Card are used to show user related data collectively, like product
+            details on e-commerce website.
+          </p>
+          <p class="fs-2 mt-2 font-weight-bold">Card with only text</p>
+          <p class="pt-1 ml-1">
+            Use
+            <span class="orange-theme-color"
+              >card-title, card-subtitle and card-text </span
+            >in card class to make card text only.
+          </p>
+          <div class="d-flex flex-justify-center mt-1 card-container">
+            <div class="card vert-card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle">Card subtitle</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+                <button
+                  href="#"
+                  class="btn persian-blue-bg white-text-color btn-card"
+                >
+                  Go somewhere
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520vert-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522card-title%2522%253ECard%2520title%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522card-subtitle%2522%253ECard%2520subtitle%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit...%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520persian-blue-bg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520white-text-color%2520btn-card%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Go%2520somewhere%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-2 font-weight-bold">Horizontal Cards</p>
+          <p class="pt-1 ml-1">
+            Use
+            <span class="orange-theme-color"
+              >card, hori-card, card-img-hori </span
+            >in card class to make it horizontal.
+          </p>
+          <div class="d-flex flex-justify-center mt-1 card-container">
+            <div class="card hori-card card-shadow">
+              <span class="badge cancel-card" title="Remove from cart">
+                <span class="material-icons"> cancel </span>
+              </span>
+              <div class="card-img-hori">
+                <img
+                  src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg?w=740"
+                  class="responsive-img img-hori"
+                />
+              </div>
+              <div class="card-body flex-column">
+                <a class="card-title" href="#card">Strandmon</a>
+                <span class="card-subtitle">Wing Chair,grey</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+                <div class="price-container">
+                  <span class="orignal-price">Rs 20000</span>
+                  <span class="discount-price">Rs 17999</span>
+                </div>
+                <div
+                  class="d-flex align-items-center flex-justify-space-between"
+                >
+                  <button
+                    href="#"
+                    class="btn persian-blue-bg white-text-color btn-card btn-size"
+                  >
+                    <span class="material-icons card-btn-icon">
+                      shopping_cart</span
+                    >
+                    <p>Move to cart</p>
+                  </button>
+                  <div class="ml-1 mb-1 d-flex align-items-center">
+                    <span class="mr-1">Quantity: </span>
+                    <button class="inc-dec-btn">+</button>
+                    <span class="p-1">1</span>
+                    <button class="inc-dec-btn">-</button>
+                  </div>
+                  <span class="ml-2 mb-1" title="Add to wishlist">
+                    <span class="material-icons icon-red add-to-wishlist">
+                      favorite
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520hori-card%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520cancel-card%2522%2520title%253D%2522Remove%2520from%2520cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253E%2520cancel%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-hori%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522img-link%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520img-hori%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2520flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card-title%2522%2520href%253D%2522%2523card%2522%253EStrandmon%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-subtitle%2522%253EWing%2520Chair%252Cgrey%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522orignal-price%2522%253ERs%252020000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-price%2522%253ERs%252017999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522d-flex%2520align-items-center%2520flex-justify-space-between%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520persian-blue-bg%2520white-text-color%2520btn-card%2520btn-size%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EMove%2520to%2520cart%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ml-1%2520mb-1%2520d-flex%2520align-items-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522mr-1%2522%253EQuantity%253A%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522inc-dec-btn%2522%253E%252B%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-1%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522inc-dec-btn%2522%253E-%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522ml-2%2520mb-1%2522%2520title%253D%2522Add%2520to%2520wishlist%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520icon-red%2520add-to-wishlist%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520favorite%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <p class="fs-2 mt-2 font-weight-bold">Vertical Card</p>
+          <p class="pt-1 ml-1">
+            Use
+            <span class="orange-theme-color"
+              >card, card-vert, card-img-vert </span
+            >in card class to make card vertical.
+          </p>
+          <div class="d-flex flex-justify-center mt-1 card-container">
+            <div class="card flex-column card-vert">
+              <img
+                src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg?w=740"
+                class="card-img-vert"
+              />
+              <div class="card-body">
+                <a class="card-title" href="#card">Strandmon</a>
+                <span class="card-subtitle">Wing Chair,grey</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+                <div class="price-container">
+                  <span class="orignal-price">Rs 20000</span>
+                  <span class="discount-price">Rs 17999</span>
+                </div>
+                <button
+                  href="#"
+                  class="btn persian-blue-bg white-text-color btn-card btn-size"
+                >
+                  <span class="material-icons card-btn-icon">
+                    shopping_cart</span
+                  >
+                  <p>Move to cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-column%2520card-vert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522image%2520url%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img-vert%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card-title%2522%2520href%253D%2522%2523card%2522%253EStrandmon%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-subtitle%2522%253EWing%2520Chair%252Cgrey%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522orignal-price%2522%253ERs%252020000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-price%2522%253ERs%252017999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520persian-blue-bg%2520white-text-color%2520btn-card%2520btn-size%2522%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2522%253EMove%2520to%2520cart%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-2 font-weight-bold">Card with shadow</p>
+          <p class="pt-1 ml-1">
+            Use <span class="orange-theme-color">card-shadow </span>to give
+            shadow to card.
+          </p>
+          <div class="d-flex flex-justify-center mt-1">
+            <div class="card flex-column card-vert card-shadow">
+              <img
+                src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg?w=740"
+                class="card-img-vert"
+              />
+              <div class="card-body">
+                <a class="card-title" href="#card">Strandmon</a>
+                <span class="card-subtitle">Wing Chair,grey</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+                <div class="price-container">
+                  <span class="orignal-price">Rs 20000</span>
+                  <span class="discount-price">Rs 17999</span>
+                </div>
+                <button
+                  href="#"
+                  class="btn persian-blue-bg white-text-color btn-card btn-size"
+                >
+                  <span class="material-icons card-btn-icon">
+                    shopping_cart</span
+                  >
+                  <p>Move to cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-column%2520card-vert%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522image%2520url%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img-vert%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card-title%2522%2520href%253D%2522%2523card%2522%253EStrandmon%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-subtitle%2522%253EWing%2520Chair%252Cgrey%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522orignal-price%2522%253ERs%252020000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-price%2522%253ERs%252017999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520persian-blue-bg%2520white-text-color%2520btn-card%2520btn-size%2522%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2522%253EMove%2520to%2520cart%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-2 font-weight-bold">Card with badge</p>
+          <p class="pt-1 ml-1">
+            Use <span class="orange-theme-color">badge,add-to-fav </span>class
+            to display add to favourite badge over card.
+          </p>
+          <div class="d-flex flex-justify-center mt-1">
+            <div class="card flex-column card-vert card-shadow">
+              <span class="badge add-to-fav" title="Add to favourite">
+                <span class="material-icons icon-red"> favorite </span>
+              </span>
+              <img
+                src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg?w=740"
+                class="card-img-vert"
+              />
+              <div class="card-body">
+                <a class="card-title" href="#card">Strandmon</a>
+                <span class="card-subtitle">Wing Chair,grey</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+                <div class="price-container">
+                  <span class="orignal-price">Rs 20000</span>
+                  <span class="discount-price">Rs 17999</span>
+                </div>
+                <button
+                  href="#"
+                  class="btn persian-blue-bg white-text-color btn-card btn-size"
+                >
+                  <span class="material-icons card-btn-icon">
+                    shopping_cart</span
+                  >
+                  <p>Move to cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-column%2520card-vert%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520add-to-fav%2522%2520title%253D%2522Add%2520to%2520favourite%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520icon-red%2522%253E%2520favorite%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522img-url%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img-vert%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card-title%2522%2520href%253D%2522%2523card%2522%253EStrandmon%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-subtitle%2522%253EWing%2520Chair%252Cgrey%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit...%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522orignal-price%2522%253ERs%252020000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-price%2522%253ERs%252017999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520persian-blue-bg%2520white-text-color%2520btn-card%2520btn-size%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2522%253EMove%2520to%2520cart%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-2 font-weight-bold">Card with dismiss</p>
+          <p class="pt-1 ml-1">
+            Use <span class="orange-theme-color">badge,cancel-card </span>class
+            to display cancel badge over card.
+          </p>
+          <div class="d-flex flex-justify-center mt-1">
+            <div class="card flex-column card-vert card-shadow">
+              <span class="badge cancel-card" title="cancel">
+                <span class="material-icons"> cancel </span>
+              </span>
+              <img
+                src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg?w=740"
+                class="card-img-vert"
+              />
+              <div class="card-body">
+                <a class="card-title" href="#card">Strandmon</a>
+                <span class="card-subtitle">Wing Chair,grey</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+                <div class="price-container">
+                  <span class="orignal-price">Rs 20000</span>
+                  <span class="discount-price">Rs 17999</span>
+                </div>
+                <button
+                  href="#"
+                  class="btn persian-blue-bg white-text-color btn-card btn-size"
+                >
+                  <span class="material-icons card-btn-icon">
+                    shopping_cart</span
+                  >
+                  <p>Move to cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-column%2520card-vert%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520cancel-card%2522%2520title%253D%2522cancel%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253E%2520cancel%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522image%2520url%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img-vert%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card-title%2522%2520href%253D%2522%2523card%2522%253EStrandmon%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-subtitle%2522%253EWing%2520Chair%252Cgrey%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit...%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522orignal-price%2522%253ERs%252020000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-price%2522%253ERs%252017999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520persian-blue-bg%2520white-text-color%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520btn-card%2520btn-size%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2522%253EMove%2520to%2520cart%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-2 font-weight-bold">Card with Overlay</p>
+
+          <p class="pt-1 ml-1">
+            Use <span class="orange-theme-color">card-overlay </span>to display
+            your card as deactive.
+          </p>
+          <div class="d-flex flex-justify-center mt-1">
+            <div class="card flex-column card-vert card-shadow">
+              <div class="card-overlay overlay-card-content">Out of Stock</div>
+              <span class="badge badge-overlay">
+                <span class="material-icons icon-red"> favorite </span>
+              </span>
+              <img
+                src="https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg?w=740"
+                class="card-img-vert"
+              />
+              <div class="card-body">
+                <a class="card-title" href="#card">Strandmon</a>
+                <span class="card-subtitle">Wing Chair,grey</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                </p>
+                <div class="price-container">
+                  <span class="orignal-price">Rs 20000</span>
+                  <span class="discount-price">Rs 17999</span>
+                </div>
+                <button
+                  href="#"
+                  class="btn persian-blue-bg white-text-color btn-card btn-size"
+                >
+                  <span class="material-icons card-btn-icon">
+                    shopping_cart</span
+                  >
+                  <p>Move to cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-column%2520card-vert%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2520overlay-card-content%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520icon-red%2522%253E%2520favorite%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522image%2520url%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-img-vert%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522card-title%2522%2520href%253D%2522%2523card%2522%253EStrandmon%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-subtitle%2522%253EWing%2520Chair%252Cgrey%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit...%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522orignal-price%2522%253ERs%252020000%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount-price%2522%253ERs%252017999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%2523%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520persian-blue-bg%2520white-text-color%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520btn-card%2520btn-size%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520card-btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522%2522%253EMove%2520to%2520cart%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="image" class="component-container">
+          <h2>Images</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Images can be responsive to fit the parent's width, and also can be
+            customised to be round shaped.
+          </p>
+          <p class="fs-2 mt-2 font-weight-bold">Responsive Image</p>
+          <p class="pt-1 ml-1">
+            Use <span class="orange-theme-color">responsive-img </span>to make
+            image width same as parent container.If you have to change the
+            height change aspect ratio by cropping image.
+          </p>
+          <div class="mt-1">
+            <img
+              class="responsive-img p-1"
+              src="../assets/img_nature_wide.jpg"
+            />
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522mt-1%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522responsive-img%2520p-1%2522%2520src%253D%2522..%252Fassets%252Fimg_nature_wide.jpg%2522%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-2 font-weight-bold">Round Image</p>
+          <p class="pt-1 ml-1">
+            Use <span class="orange-theme-color">round-img</span> to make images
+            round.
+          </p>
+          <div class="mt-1 d-flex flex-justify-center">
+            <img class="round-img p-1" src="../assets/anime_cute_150.png" />
+          </div>
+
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522mt-1%2520d-flex%2520flex-justify-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522round-img%2520p-1%2522%2520src%253D%2522..%252Fassets%252Fanime_cute_150.png%2522%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="input" class="component-container">
+          <h2>Inputs</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Inputs are contact points where user gives data to the website which
+            could be store in the database for future use.
+          </p>
+          <p class="fs-2 mt-2 font-weight-bold">Input with label</p>
+          <p class="pt-1 ml-1">
+            Label Input has a label present at the top of the input field.They
+            can also be customized to show error-message.
+          </p>
+          <p class="pt-1 ml-1">
+            Use <span class="orange-theme-color">input,input-error</span> for
+            default and error styling respectively.
+          </p>
+          <div class="input-container mt-2 ml-1 d-flex flex-column">
+            <label for="input-label" class="ml-2 input-label">Email</label>
+            <input
+              class="input"
+              id="input-label"
+              placeholder="you@example.com"
+            />
+          </div>
+
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2520mt-2%2520ml-1%2520d-flex%2520flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522input-label%2522%2520class%253D%2522ml-2%2520input-label%2522%253EEmail%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522input%2522%2520id%253D%2522input-label%2522%2520placeholder%253D%2522you%2540example.com%2522%252F%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="input-container mt-2 ml-1 d-flex flex-column">
+            <label class="ml-2 input-label" for="inp-password">Password</label>
+            <input
+              id="inp-password"
+              class="input input-error"
+              placeholder="*******"
+            />
+            <small class="text-red ml-2">Forgot your password?</small>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2520mt-2%2520ml-1%2520d-flex%2520flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522ml-2%2520input-label%2522%2520for%253D%2522inp-password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522inp-password%2522%2520class%253D%2522input%2520input-error%2522%2520%2520placeholder%253D%2522*******%2522%2520%252F%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-red%2520ml-2%2522%253EForgot%2520your%2520password%253F%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+           
+          </div>
+          <div class="input-container mt-2 ml-1 d-flex flex-column">
+            <label class="ml-2 input-label" for="inp-password">Password</label>
+            <input
+              id="inp-password"
+              class="input input-success"
+              placeholder="*******"
+            />
+            <label class="ml-2 input-label" for="inp-password">Confirm Password</label>
+            <input
+              id="inp-password"
+              class="input input-success"
+              placeholder="*******"
+            />
+            <small class="green-text ml-2">Your password is successfully matched!</small>
+          </div>
+
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2520mt-2%2520ml-1%2520d-flex%2520flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522ml-2%2520input-label%2522%2520for%253D%2522inp-password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522inp-password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input%2520input-success%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522*******%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522ml-2%2520input-label%2522%2520for%253D%2522inp-password%2522%253EConfirm%2520Password%253C%252Flabel%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522inp-password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input%2520input-success%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522*******%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522green-text%2520ml-2%2522%253EYour%2520password%2520is%2520successfully%2520matched%21%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+          <p class="fs-2 mt-4 font-weight-bold">Radio inputs</p>
+          <p class="pt-1 ml-1">
+            Radio buttons are used to select one option from number of
+            choices.Use
+            <span class="orange-theme-color">form-check-input</span> for basic
+            styling
+          </p>
+          <div class="input-container mt-2 ml-1">
+            <input
+              id="radio-checked"
+              class="form-check-input"
+              type="radio"
+              checked
+            />
+            <label for="radio-checked">Checked</label>
+
+            <input id="radio-unchecked" class="form-check-input" type="radio" />
+            <label for="radio-unchecked"> Unchecked</label>
+            <input
+              id="radio-disabled"
+              class="form-check-input"
+              type="radio"
+              disabled
+            />
+            <label for="radio-disabled">disabled</label>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522radio-checked%2522%2520class%253D%2522form-check-input%2522%2520type%253D%2522radio%2522%2520checked%252F%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-checked%2522%253EChecked%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522radio-unchecked%2522%2520class%253D%2522form-check-input%2522%2520type%253D%2522radio%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-unchecked%2522%253EUnchecked%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522radio-disabled%2522%2520class%253D%2522form-check-input%2522%2520type%253D%2522radio%2522%2520disabled%252F%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-disabled%2522%253Edisabled%253C%252Flabel%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="fs-2 mt-4 font-weight-bold">Checkbox inputs</p>
+          <p class="pt-1 ml-1">
+            Checkbox is used to select one or more option from number of
+            choices.Use
+            <span class="orange-theme-color">form-check-input</span> for basic
+            styling
+          </p>
+          <div class="input-container mt-2 ml-1">
+            <input
+              id="checkbox-checked"
+              class="form-check-input"
+              type="checkbox"
+              checked
+            />
+            <label for="checkbox-checked">Checked</label>
+
+            <input
+              id="checkbox-unchecked"
+              class="form-check-input"
+              type="checkbox"
+            />
+            <label for="checkbox-unchecked"> Unchecked</label>
+
+            <input
+              id="checkbox-disabled"
+              class="form-check-input"
+              type="checkbox"
+              disabled
+            />
+            <label for="checkbox-disabled"> disabled</label>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522checkbox-checked%2522%2520class%253D%2522form-check-input%2522%2520type%253D%2522checkbox%2522%2520checked%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-checked%2522%253EChecked%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522checkbox-unchecked%2522%2520class%253D%2522form-check-input%2522%2520type%253D%2522checkbox%2522%252F%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-unchecked%2522%253EUnchecked%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522checkbox-disabled%2522%2520class%253D%2522form-check-input%2522%2520type%253D%2522checkbox%2522%2520disabled%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522checkbox-disabled%2522%253Edisabled%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="text-utility"></section>
+        <section id="navigation" class="component-container">
+          <h2>Navigation</h2>
+          <p class="mt-1 fs-2 grey-text">
+            Navigation bar is used to navigate through the web apps or websites
+          </p>
+          <p class="pt-1 ml-1 mb-2">
+            Use
+            <span class="orange-theme-color"
+              >nav-bar, nav-logo-section, search-bar-section, nav-items</span
+            >
+            for creating a navbar
+          </p>
+          <div class="nav-bar nav-yellow-shadow">
+            <div class="nav-logo-section">
+              <img src="../assets/location.png" class="mb-1" />
+              <h3 class="mr-4 aqua-color">dreamStore</h3>
+              <a class="black-text-color" href="#navigation"
+                ><h5>products</h5></a
+              >
+            </div>
+            <div class="search-bar-section">
+              <div class="search-container">
+                <input placeholder="search" class="search-bar" />
+                <span class="material-icons"> search </span>
+              </div>
+            </div>
+            <div class="nav-items">
+              <a class="black-text-color" href="#navigation">
+                <span class="material-icons mr-1" title="wishlist">
+                  favorite
+                </span>
+              </a>
+              <a class="black-text-color" href="#navigation"
+                ><span class="material-icons mr-1 ml-1" title="cart">
+                  shopping_cart
+                </span></a
+              >
+              <a href="#navigation" class="black-text-color"
+                ><span class="material-icons ml-1" title="account">
+                  account_circle
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="mt-2 ml-1 code-snippet">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-bar%2520nav-yellow-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%252Fassets%252Flocation.png%2522%2520class%253D%2522mb-1%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522mr-4%2520aqua-color%2522%253EdreamStore%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522black-text-color%2522%2520href%253D%2522%2523navigation%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253Eproducts%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-bar-section%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520placeholder%253D%2522search%2522%2520class%253D%2522search-bar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253E%2520search%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522black-text-color%2522%2520href%253D%2522%2523navigation%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520mr-1%2522%2520title%253D%2522wishlist%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520favorite%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522black-text-color%2522%2520href%253D%2522%2523navigation%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520mr-1%2520ml-1%2522%2520title%253D%2522cart%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523navigation%2522%2520class%253D%2522black-text-color%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Cspan%2520class%253D%2522material-icons%2520ml-1%2522%2520title%253D%2522account%2522%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520account_circle%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+        <section id="Snackbar" class="component-container snackbar-component">
+          <p class="fs-2 mt-4 font-weight-bold">Snackbar</p>
+          <p class="pt-1 ml-1">
+            Snackbar is to used show message that need user action.Use
+            <span class="orange-theme-color">snackbar ,snackbar-stacked</span>
+            to show action messages
+          </p>
+          <div class="snackbar red-bg mt-2">
+            <p>Can't send a photo.Retry in 5 seconds.</p>
+            <button class="snackbar-btn p-1 font-weight-bold">RETRY</button>
+            <span class="close-icon">X</span>
+          </div>
+          <div class="snackbar green-bg-dark mt-2">
+            <p>Your photo has been archieved.</p>
+            <button class="snackbar-btn p-1 font-weight-bold">UNDO</button>
+            <span class="close-icon">X</span>
+          </div>
+          <div class="snackbar-stacked persian-blue-bg mt-2">
+            <p>
+              This item already has the label "travel". You can add a new label.
+            </p>
+            <div class="d-flex flex-justify-end align-items-center p-1">
+              <button class="snackbar-btn p-1 mt-1 mr-2 font-weight-bold">
+                ADD A NEW LABEL
+              </button>
+              <span class="close-icon mr-1">X</span>
+            </div>
+          </div>
+          <div class="code-snippet mt-2">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%2821%2C23%2C24%2C1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar%2520red-bg%2520mt-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ECan%27t%2520send%2520a%2520photo.Retry%2520in%25205%2520seconds.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-btn%2520p-1%2520font-weight-bold%2522%253ERETRY%253C%252Fbutton%253E%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close-icon%2522%253EX%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar%2520green-bg-dark%2520mt-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EYour%2520photo%2520has%2520been%2520archieved.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-btn%2520p-1%2520font-weight-bold%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close-icon%2522%253EX%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-stacked%2520persian-blue-bg%2520mt-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520item%2520already%2520has%2520the%2520label%2520%2522travel%2522.%2520You%2520can%2520add%2520a%2520new%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520label.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522d-flex%2520flex-justify-end%2520align-items-center%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-btn%2520p-1%2520mt-1%2520mr-2%2520font-weight-bold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ADD%2520A%2520NEW%2520LABEL%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close-icon%2520mr-1%2522%253EX%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+ 
+    <script
+      src="https://kit.fontawesome.com/7ec9fa6772.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

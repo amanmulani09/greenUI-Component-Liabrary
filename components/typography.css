@@ -1,0 +1,10 @@
+@import "./base.css";
+ @import "../global.css";
+
+ .typography-container{
+    margin: 2rem 0rem;
+    justify-items: center;
+    background-color: var(--component-secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+ }

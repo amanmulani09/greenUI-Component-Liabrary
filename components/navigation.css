@@ -1,0 +1,40 @@
+@import "./base.css";
+@import "../global.css";
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-yellow-shadow {
+  box-shadow: 0 6px 1.25rem 0 #f7e68b;
+}
+.nav-logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--card-border-color);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid transparent;
+}
+
+.aqua-color {
+  color: var(--primary-color);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}

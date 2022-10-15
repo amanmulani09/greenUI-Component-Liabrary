@@ -1,0 +1,85 @@
+@import "../base.css";
+@import "../global.css";
+
+.badge-container {
+  background-color: var( --component-secondary-color);
+  /* padding: 1rem 0rem 1rem 1rem; */
+  margin:1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.badge-parent {
+  position: relative;
+  padding: 1rem;
+  /* border-radius: 50%; */
+}
+
+.badge {
+  position: absolute;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.small-badge {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-weight: bold;
+}
+.position-small-text {
+  top: -8px;
+  right: 36.6rem;
+}
+.large-badge {
+  width: 2rem;
+  height: 2rem;
+  font-weight: bold;
+}
+.position-large-text {
+  top:-14px;
+  right: 35.9rem;
+}
+
+/* badge icons */
+.material-icons.icon {
+  font-size: 3rem;
+}
+.icon-container {
+  position: relative;
+}
+
+.position-mail-badge {
+  position: absolute;
+  top: -8px;
+  right: -7px;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.position-cart-badge {
+  position: absolute;
+  top: -12px;
+  right: -7px;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.badge .number {
+  color: black;
+}
+.material-icons.icon-size {
+  font-size: 3rem;
+}
+
+/* avatar badge */
+.avt-bdg-position{
+    bottom:1.5rem;
+    right:1.5rem;
+}
